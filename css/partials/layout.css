@@ -4,6 +4,7 @@
   margin: 0px;
   padding: 0px;
   text-decoration: none;
+  font-family: "Roboto Mono", "Red hat Text";
 }
 
 body {
@@ -18,13 +19,42 @@ main {
 
 h1 {
   color: var(--h1-color);
-  font-family: "Robot mono", sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  font-family: "Red hat text", sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
 .herobanner {
-  width: 100%;
-  height: 300px;
+  background-image: url(/img/wasis-riyan-n2LaluKX2hk-unsplash.jpg);
+  background-image: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+  background-size: 100%;
+  margin-bottom: 100px;
+}
+
+.sliderbox {
+  font-size: 5rem;
+  color: var(--h1-color);
+  text-align: center;
+  margin-top: 150px;
+  border: solid 2px red;
+  height: 500px;
+}
+
+.welcomeTextBox {
+  margin: 40px auto 80px auto;
+  width: 80%;
+}
+
+.welcomeText {
+  color: var(--h1-color);
+  font-size: 1.7rem;
+  line-height: 50px;
 }

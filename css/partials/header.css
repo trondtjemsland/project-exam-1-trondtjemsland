@@ -1,13 +1,13 @@
 .headerimage {
-  background-image: url(/img/Vector.png);
-  height: 150px;
-  width: 100%;
+  background-image: url(/img/header.svg);
+  height: 300px;
+  object-fit: cover;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .logoimage {
-  width: 120px;
+  width: 110px;
   margin: 20px;
 }
 
@@ -27,7 +27,7 @@ ul {
 
 .navLinks a {
   color: white;
-  margin-left: 30px;
+  margin-left: 40px;
   font-family: "Roboto Mono", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;

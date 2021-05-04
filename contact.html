@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Tech Blog</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerimage">
+        <nav>
+          <div class="logo">
+            <img src="/img/LOGO.png" alt="" class="logoimage" />
+          </div>
+          <ul>
+            <li class="navLinks"><a href="posts.html">Posts</a></li>
+            <li class="navLinks"><a href="about">About</a></li>
+            <li class="navLinks"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="formDiv">
+        <form>
+          <label class="formlabel" for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+          <p class="error nameError">Please enter a valid Name</p>
+
+          <label class="formlabel" for="email">Email:</label>
+          <input type="text" name="email" id="email" />
+          <p class="error emailError">Please enter a valid email</p>
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+          ></textarea>
+
+          <button class="submitBtn" id="submit">Submit</button>
+        </form>
+        <div class="formText">
+          <p>Start the road to sharing</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerIcons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </footer>
+  </body>
+</html>
