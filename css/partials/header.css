@@ -7,7 +7,7 @@
 }
 
 .logoimage {
-  width: 110px;
+  width: 120px;
   margin: 20px;
 }
 
@@ -26,9 +26,9 @@ ul {
 }
 
 .navLinks a {
-  color: white;
+  color: var(--text-color);
   margin-left: 40px;
   font-family: "Roboto Mono", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }

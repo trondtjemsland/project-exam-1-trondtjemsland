@@ -1,0 +1,13 @@
+.aboutImagebox {
+  background-image: url(/img/aboutme.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  height: 600px;
+}
+
+.aboutmetext {
+  color: var(--text-color);
+  font-size: 2rem;
+}

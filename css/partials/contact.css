@@ -7,7 +7,7 @@
   border-radius: 5px;
   margin-top: 40px;
   padding: 20px;
-  background-color: rgba(220, 252, 229, 0.712);
+  background-color: #21cbe7;
   width: 30%;
   height: 500px;
   margin: 150px auto;
@@ -21,7 +21,7 @@ input[type="text"] {
 }
 
 #subject {
-  height: 200px;
+  height: 40px;
   width: 100%;
   border-radius: 5px;
   border: solid 1px black;
@@ -44,7 +44,7 @@ p {
 
 .submitBtn {
   margin-top: 50px;
-  background-color: rgba(38, 50, 56, 1);
+  background-color: var(--pink-color);
   width: 100%;
   padding: 10px;
   border: none;
