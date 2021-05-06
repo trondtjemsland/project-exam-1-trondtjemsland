@@ -3,11 +3,11 @@
 }
 
 .formDiv {
-  border: solid 2px black;
+  /* border: solid 2px black; */
   border-radius: 5px;
   margin-top: 40px;
   padding: 20px;
-  background-color: #21cbe7;
+  /* background-color: #21cbe7; */
   width: 30%;
   height: 500px;
   margin: 150px auto;
@@ -18,6 +18,8 @@ input[type="text"] {
   height: 40px;
   border: solid 1px black;
   border-radius: 5px;
+  color: var(--text-color);
+  background-color: var(--text-color);
 }
 
 #subject {
@@ -25,9 +27,11 @@ input[type="text"] {
   width: 100%;
   border-radius: 5px;
   border: solid 1px black;
+  background-color: var(--text-color);
 }
 
 label {
+  color: var(--text-color);
   margin-top: 10px;
   display: block;
 }
@@ -49,7 +53,7 @@ p {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: var(--text-color);
   height: 60px;
 }
 
