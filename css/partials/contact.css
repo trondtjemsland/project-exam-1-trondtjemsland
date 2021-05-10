@@ -8,8 +8,8 @@
   margin-top: 40px;
   padding: 20px;
   /* background-color: #21cbe7; */
-  width: 30%;
-  height: 500px;
+  width: 50%;
+  height: 800px;
   margin: 150px auto;
 }
 
@@ -24,6 +24,14 @@ input[type="text"] {
 
 #subject {
   height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px black;
+  background-color: var(--text-color);
+}
+
+#text {
+  height: 200px;
   width: 100%;
   border-radius: 5px;
   border: solid 1px black;
@@ -55,6 +63,10 @@ p {
   border-radius: 5px;
   color: var(--text-color);
   height: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .formText {

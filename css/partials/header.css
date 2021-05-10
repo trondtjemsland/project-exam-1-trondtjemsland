@@ -1,13 +1,13 @@
 .headerimage {
   background-image: url(/img/header.svg);
-  height: 300px;
+  height: 330px;
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .logoimage {
-  width: 120px;
+  width: 140px;
   margin: 20px;
 }
 
@@ -31,4 +31,21 @@ ul {
   font-family: "Roboto Mono", sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .headerimage {
+    background-size: 150%;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerimage {
+    background-size: 150%;
+  }
+
+  .logoimage {
+    width: 100px;
+    margin: 20px;
+  }
 }
