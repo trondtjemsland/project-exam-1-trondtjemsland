@@ -8,11 +8,12 @@ async function getApi() {
 
     apiResults.forEach((element) => {
       document.querySelector(".postsContainer").innerHTML += `
-    
-          <div class="postsCards postcardsStyle"${element.id}">
-              <img class="postsImage" src="${element.better_featured_image.source_url}">    
+
+          <div class="postsCards postcardsStyle">
+              <img class="postsImage" src="${element.better_featured_image.source_url}">
+              <p class="postsCardText">${element.title.rendered}</p>
           </div>
-            
+
          `;
     });
   } catch (error) {

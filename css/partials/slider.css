@@ -1,0 +1,31 @@
+.value_title {
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #a18b78;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.9s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
