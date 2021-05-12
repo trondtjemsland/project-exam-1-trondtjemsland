@@ -10,8 +10,9 @@ async function getApi() {
       document.querySelector(".postsContainer").innerHTML += `
 
           <div class="postsCards postcardsStyle">
-              <img class="postsImage" src="${element.better_featured_image.source_url}">
+          <a  href="specificblog.html?id=${element.id}"><img class="postsImage" src="${element.better_featured_image.source_url}">
               <p class="postsCardText">${element.title.rendered}</p>
+          </a>    
           </div>
 
          `;

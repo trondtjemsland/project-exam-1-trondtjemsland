@@ -9,11 +9,13 @@
 .aboutmetextbox {
   display: flex;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .aboutmetext {
   color: var(--text-color);
   font-size: 1.5rem;
+  line-height: 3rem;
   width: 50%;
   margin-right: 40px;
 }
