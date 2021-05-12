@@ -19,9 +19,8 @@ nav {
   margin: auto;
 }
 
-ul {
+.headerList {
   display: flex;
-  justify-content: flex-end;
   list-style: none;
 }
 

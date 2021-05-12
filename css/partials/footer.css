@@ -4,7 +4,7 @@ footer {
   justify-content: center;
   background-color: black;
   align-items: center;
-  margin: auto;
+  margin: 40px auto 0px;
 }
 
 .footerIcons {

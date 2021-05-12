@@ -7,7 +7,20 @@
   height: 600px;
 }
 
+.aboutmetextbox {
+  display: flex;
+}
+
 .aboutmetext {
   color: var(--text-color);
-  font-size: 2rem;
+  font-size: 1.3rem;
+  width: 50%;
+  border: solid 2px yellow;
+  margin-right: 40px;
+}
+
+.aboutmeList {
+  width: 40%;
+  list-style: none;
+  border: solid 2px red;
 }
