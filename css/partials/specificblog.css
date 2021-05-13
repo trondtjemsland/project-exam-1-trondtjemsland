@@ -1,7 +1,15 @@
-/* .specificPostsImage {
-  height: 400px;
-} */
-
+.wp-image-187,
 .wp-image-151 {
+  width: 100%;
+}
+
+.specificblogText {
+  color: var(--text-color);
+  margin-top: 40px;
+  line-height: 40px;
+  font-size: 1.3rem;
+}
+
+.detailsImg {
   width: 100%;
 }

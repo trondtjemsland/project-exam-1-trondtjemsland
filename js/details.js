@@ -17,7 +17,7 @@ async function getBlogposts(Id) {
     console.log(Id);
 
     document.querySelector(".spesificBlogContainer").innerHTML += `
-
+                <h1 class="specificBlogHeading">${jsonResults.title.rendered}</h1>
                 <div class="postcards">
                     ${jsonResults.content.rendered}
                 </div>
