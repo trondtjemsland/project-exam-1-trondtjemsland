@@ -10,9 +10,12 @@ async function getApi() {
       document.querySelector(".postsContainer").innerHTML += `
 
           <div class="postsCards postcardsStyle">
-          <a  href="specificblog.html?id=${element.id}"><img class="postsImage" src="${element.better_featured_image.source_url}">
-              <p class="postsCardText">${element.title.rendered}</p>
-          </a>    
+            <a  href="specificblog.html?id=${element.id}"><img class="postsImage" src="${element.better_featured_image.source_url}">
+              <div class="postCardTextContainer">
+                <p class="postsCardText">${element.title.rendered}</p>
+                <p class="postCardInfo">${element.excerpt.rendered}</p>
+              </div>    
+            </a>    
           </div>
 
          `;
