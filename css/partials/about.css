@@ -7,7 +7,6 @@
 }
 
 .aboutmetextbox {
-  display: flex;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -15,13 +14,10 @@
 .aboutmetext {
   color: var(--text-color);
   font-size: 1.5rem;
-  line-height: 3rem;
-  width: 50%;
-  margin-right: 40px;
+  line-height: 2rem;
 }
 
 .aboutmeList {
-  width: 40%;
   list-style: none;
   color: var(--text-color);
   font-size: 1.5rem;

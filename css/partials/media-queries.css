@@ -2,11 +2,18 @@
   .headerimage {
     background-size: 150%;
   }
+  h1 {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 800px) {
   .headerimage {
     background-size: 150%;
+  }
+
+  .formDiv {
+    width: 100%;
   }
 
   .logoimage {
@@ -15,6 +22,9 @@
   }
   h1 {
     font-size: 1.5rem;
+  }
+  .aboutImagebox {
+    height: 300px;
   }
 }
 
@@ -30,5 +40,17 @@
 
   h1 {
     font-size: 2rem;
+  }
+
+  .aboutmetext {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .aboutImagebox {
+    height: 300px;
+  }
+  .formDiv {
+    width: 100%;
   }
 }

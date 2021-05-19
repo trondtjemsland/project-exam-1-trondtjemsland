@@ -11,10 +11,11 @@ async function getSlider() {
       ) {
         document.querySelector("#examposts").innerHTML += `
         <div class="slide">
-            <img src="${element.better_featured_image.source_url}">
+        <a  href="specificblog.html?id=${element.id}"><img src="${element.better_featured_image.source_url}">
             <div class="h1undertitle">
                 <h3 class="value_title">${element.title.rendered}</h3>
             </div>
+         </a>   
         </div>
         `;
       } else {
