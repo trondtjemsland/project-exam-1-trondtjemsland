@@ -29,6 +29,10 @@
   margin-bottom: 10px;
 }
 
+.postCardInfo {
+  margin: 10px;0
+}
+
 .postsImage {
   width: 300px;
   height: 300px;
