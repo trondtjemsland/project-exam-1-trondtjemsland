@@ -5,6 +5,16 @@
   h1 {
     font-size: 1.6rem;
   }
+  .fa-plus-circle {
+    bottom: 0px;
+    margin: auto;
+    position: unset;
+  }
+  .viewmoreBtn {
+    width: 100%;
+    position: unset;
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 800px) {

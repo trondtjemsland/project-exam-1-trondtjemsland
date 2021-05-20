@@ -1,14 +1,17 @@
-const nameError = document.querySelector(".nameError");
-const passwordError = document.querySelector(".passwordError");
-const emailError = document.querySelector(".emailError");
-const addressError = document.querySelector(".addressError");
+const submitBtn = document.querySelector("#submit");
 
-submit.onclick = function (event) {
+const nameError = document.querySelector(".nameError");
+const subjectError = document.querySelector(".subjectError");
+const emailError = document.querySelector(".emailError");
+const textError = document.querySelector(".textError");
+
+submitBtn.onclick = function (event) {
   event.preventDefault();
 
   const name = document.querySelector("#name").value.trim();
-  const password = document.querySelector("#password").value.trim();
+  const subject = document.querySelector("#subject").value.trim();
   const email = document.querySelector("#email").value.trim();
+  const text = document.querySelector("#text").value.trim();
 
   //Trim  is working
 
@@ -19,12 +22,19 @@ submit.onclick = function (event) {
     nameError.classList.add("show");
     nameError.classList.remove("hide");
   }
-  if (password.length >= 8) {
-    passwordError.classList.add("hide");
-    passwordError.classList.remove("show");
+  if (subject.length >= 8) {
+    subjectError.classList.add("hide");
+    subjectError.classList.remove("show");
   } else {
-    passwordError.classList.add("show");
-    passwordError.classList.remove("hide");
+    subjectError.classList.add("show");
+    subjectError.classList.remove("hide");
+  }
+  if (text.length >= 8) {
+    textError.classList.add("hide");
+    textError.classList.remove("show");
+  } else {
+    textError.classList.add("show");
+    textError.classList.remove("hide");
   }
 
   if (validateEmail(email)) {
@@ -37,10 +47,13 @@ submit.onclick = function (event) {
 };
 
 function validateEmail(emailAddy) {
-  const emailExpression = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const emailExpression =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   const isEmailValid = emailExpression.test(emailAddy);
   return isEmailValid;
 }
+
+// const submitBtn = document.querySelector("#submit");
 
 // function validateEmail(passwordValidation) {
 //   const passwordNumberExpression = /^[A-Za-z])(?=.\d)(?=.[@$!%#?&])[A-Za-z]{8,}$";

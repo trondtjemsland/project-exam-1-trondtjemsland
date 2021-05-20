@@ -39,3 +39,16 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
+.fa-plus-circle {
+  color: var(--blue-color);
+  font-size: 3rem;
+  margin: auto;
+}
+
+.viewmoreBtn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}

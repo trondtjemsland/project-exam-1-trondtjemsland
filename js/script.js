@@ -1,8 +1,9 @@
-async function getApi() {
+const getmorePosts =
+  "https://noroffcors.herokuapp.com/https://api.tjemsland.online/wp-json/wp/v2/posts";
+
+async function getApi(url) {
   try {
-    const response = await fetch(
-      "https://noroffcors.herokuapp.com/https://api.tjemsland.online/wp-json/wp/v2/posts "
-    );
+    const response = await fetch(url);
     const apiResults = await response.json();
     console.log(apiResults);
 
@@ -17,6 +18,7 @@ async function getApi() {
               </div>    
             </a>    
           </div>
+        
 
          `;
     });
@@ -25,7 +27,7 @@ async function getApi() {
   }
 }
 
-getApi();
+getApi(getmorePosts);
 
 const currentLocation = location.href;
 const menuItem = document.querySelectorAll(".activePage");
@@ -36,3 +38,10 @@ for (let i = 0; i < menuLength; i++) {
     menuItem[i].className = "active";
   }
 }
+
+const readMoreButton = document.querySelector(".fa-plus-circle");
+
+readMoreButton.onclick = function () {
+  getApi(getmorePosts + `?page=2`);
+  readMoreButton.innerHTML = "";
+};

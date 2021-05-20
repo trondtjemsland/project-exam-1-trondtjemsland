@@ -61,20 +61,17 @@
       <h1 class="contactHeading">Feel Free To Contact Me</h1>
       <div class="formDiv">
         <form>
-          <label class="formlabel" for="name">Name:</label>
+          <label class="formlabel" for="name">Name</label>
           <input type="text" name="name" id="name" />
-          <p class="error nameError">Please enter a valid Name</p>
+          <p class="error hide nameError">Please enter a valid Name</p>
 
-          <label class="formlabel" for="email">Email:</label>
+          <label class="formlabel" for="email">Email</label>
           <input type="text" name="email" id="email" />
-          <p class="error emailError">Please enter a valid email</p>
+          <p class="error hide emailError">Please enter a valid email</p>
 
-          <label for="subject">Subject</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Write something.."
-          ></textarea>
+          <label class="formlabel" for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" />
+          <p class="error hide subjectError">Please enter a subject</p>
 
           <label for="text">Text</label>
           <textarea
@@ -82,7 +79,7 @@
             name="text"
             placeholder="Write something.."
           ></textarea>
-
+          <p class="error hide textError">Please enter a subject</p>
           <button class="submitBtn" id="submit">Submit</button>
         </form>
       </div>

@@ -25,9 +25,15 @@ input[type="text"] {
   height: 40px;
   width: 100%;
   border-radius: 5px;
-
   background-color: var(--text-color);
 }
+
+/* #message {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--text-color);
+} */
 
 #text {
   height: 200px;
@@ -46,11 +52,6 @@ label {
 p {
   padding: 0px;
   margin: 0px;
-}
-
-.error {
-  color: red;
-  display: none;
 }
 
 .submitBtn {
