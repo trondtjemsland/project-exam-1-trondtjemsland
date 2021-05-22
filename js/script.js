@@ -3,9 +3,6 @@ const getmorePosts =
 
 async function getApi(url) {
   try {
-    document.querySelector(".loading").innerHTML = `
-    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_6gfl0jjp.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
-  `;
     const response = await fetch(url);
     const apiResults = await response.json();
     console.log(apiResults);
@@ -27,7 +24,6 @@ async function getApi(url) {
     });
   } catch (error) {
   } finally {
-    document.querySelector(".loadingcontainer").innerHTML = ` `;
   }
 }
 
