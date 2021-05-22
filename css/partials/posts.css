@@ -20,17 +20,14 @@
 .postCardTextContainer {
   width: 300px;
   color: var(--text-color);
+  padding: 10px;
+  font-family: "Red hat Text", "Roboto Mono";
 }
 
 .postsCardText {
   color: var(--text-color);
   font-weight: bold;
   font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.postCardInfo {
-  margin: 10px;
 }
 
 .postsImage {
@@ -51,13 +48,14 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 50px;
+  cursor: pointer;
 }
 
-.loadingcontainer {
+/* .loadingcontainer {
   width: 100%;
 }
 
 .loading {
   width: 30%;
   margin: auto;
-}
+} */
