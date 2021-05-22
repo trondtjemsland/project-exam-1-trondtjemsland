@@ -52,3 +52,12 @@
   justify-content: flex-end;
   margin-top: 50px;
 }
+
+.loadingcontainer {
+  width: 100%;
+}
+
+.loading {
+  width: 30%;
+  margin: auto;
+}

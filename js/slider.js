@@ -19,6 +19,7 @@ function charousel() {
         settings: {
           arrows: false,
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
