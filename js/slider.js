@@ -40,7 +40,7 @@ async function getSlider() {
         <div class="slide">
         <a  href="specificblog.html?id=${element.id}"><img src="${element.better_featured_image.source_url}">
             <div class="h3title">
-                <h3 class="charouseltitle">${element.title.rendered}</h3>
+                <h2 class="charouseltitle">${element.title.rendered}</h2>
             </div>
          </a>   
         </div>
