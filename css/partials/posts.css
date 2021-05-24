@@ -51,11 +51,8 @@
   cursor: pointer;
 }
 
-/* .loadingcontainer {
-  width: 100%;
+.loadingcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.loading {
-  width: 30%;
-  margin: auto;
-} */

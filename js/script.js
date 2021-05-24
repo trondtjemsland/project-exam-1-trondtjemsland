@@ -6,7 +6,7 @@ async function getApi(url) {
     const response = await fetch(url);
     const apiResults = await response.json();
     console.log(apiResults);
-
+    document.querySelector(".loadingcontainer").innerHTML = ``;
     apiResults.forEach((element) => {
       document.querySelector(".postsContainer").innerHTML += `
 
