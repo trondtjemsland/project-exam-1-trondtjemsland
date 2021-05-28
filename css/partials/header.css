@@ -76,6 +76,10 @@ nav .logo {
   cursor: pointer;
 }
 @media (max-width: 800px) {
+  .active {
+    width: 120%;
+  }
+
   nav .headerList {
     height: 100vh;
     position: fixed;
@@ -86,7 +90,7 @@ nav .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.931);
     transition: top 1s ease;
     display: none;
   }

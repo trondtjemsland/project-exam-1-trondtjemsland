@@ -1,14 +1,14 @@
 const getmorePosts =
-  "https://noroffcors.herokuapp.com/https://api.tjemsland.online/wp-json/wp/v2/posts";
+  'https://noroffcors.herokuapp.com/https://api.tjemsland.online/wp-json/wp/v2/posts';
 
 async function getApi(url) {
   try {
     const response = await fetch(url);
     const apiResults = await response.json();
     console.log(apiResults);
-    document.querySelector(".loadingcontainer").innerHTML = ``;
+    document.querySelector('.loadingcontainer').innerHTML = ``;
     apiResults.forEach((element) => {
-      document.querySelector(".postsContainer").innerHTML += `
+      document.querySelector('.postsContainer').innerHTML += `
 
           <div class="postsCards postcardsStyle">
             <a  href="specificblog.html?id=${element.id}"><img class="postsImage" src="${element.better_featured_image.source_url}">
@@ -29,19 +29,19 @@ async function getApi(url) {
 
 getApi(getmorePosts);
 
-const currentLocation = location.href;
-const menuItem = document.querySelectorAll(".activePage");
-const menuLength = menuItem.length;
+// const currentLocation = location.href;
+// const menuItem = document.querySelectorAll(".activePage");
+// const menuLength = menuItem.length;
 
-for (let i = 0; i < menuLength; i++) {
-  if (menuItem[i].href === currentLocation) {
-    menuItem[i].className = "active";
-  }
-}
+// for (let i = 0; i < menuLength; i++) {
+//   if (menuItem[i].href === currentLocation) {
+//     menuItem[i].className = "active";
+//   }
+// }
 
-const readMoreButton = document.querySelector(".fa-plus-circle");
+const readMoreButton = document.querySelector('.fa-plus-circle');
 
 readMoreButton.onclick = function () {
   getApi(getmorePosts + `?page=2`);
-  readMoreButton.innerHTML = "";
+  readMoreButton.innerHTML = '';
 };
