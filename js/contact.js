@@ -1,20 +1,3 @@
-// async function getContatctForm() {
-//   const repsonse = await fetch(
-//     "https://noroffcors.herokuapp.com/https://api.tjemsland.online/wp-json/wp/v2/pages/"
-//   );
-//   const jsonFromServer = await repsonse.json();
-//   console.log(jsonFromServer);
-
-//   for (let i = 0; i < 1; i++) {
-//     console.log(jsonFromServer[i].content.rendered);
-//     document.querySelector("main").innerHTML += `
-//         ${jsonFromServer[i].content.rendered}
-//     `;
-//   }
-// }
-
-// getContatctForm();
-
 const submitBtn = document.querySelector('#submit');
 const nameError = document.querySelector('.nameError');
 const subjectError = document.querySelector('.subjectError');
@@ -76,3 +59,22 @@ function validateEmail(emailAddy) {
 //   const isPasswordValid = passwordNumberExpression.test(passwordValidation);
 //   return isPasswordValid;
 // }
+
+// LEVEL 2 CONTACT FORM (Its here just as a reminder for me and for you to see if its evene close to something or the idea)
+
+// async function getContatctForm() {
+//   const repsonse = await fetch(
+//     "https://noroffcors.herokuapp.com/https://api.tjemsland.online/wp-json/wp/v2/pages/"
+//   );
+//   const jsonFromServer = await repsonse.json();
+//   console.log(jsonFromServer);
+
+//   for (let i = 0; i < 1; i++) {
+//     console.log(jsonFromServer[i].content.rendered);
+//     document.querySelector("main").innerHTML += `
+//         ${jsonFromServer[i].content.rendered}
+//     `;
+//   }
+// }
+
+// getContatctForm();
