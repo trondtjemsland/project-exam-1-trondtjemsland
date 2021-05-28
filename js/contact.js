@@ -14,8 +14,8 @@
 // }
 
 // getContatctForm();
-// const form = document.querySelector('#contactForm');
-// const submitBtn = document.querySelector('#submit');
+
+const submitBtn = document.querySelector('#submit');
 const nameError = document.querySelector('.nameError');
 const subjectError = document.querySelector('.subjectError');
 const emailError = document.querySelector('.emailError');
@@ -31,7 +31,7 @@ submitBtn.onclick = function (event) {
 
   //Trim  is working
 
-  if (name.length > 4) {
+  if (name.length > 10) {
     nameError.classList.add('hide');
     nameError.classList.remove('show');
   } else {
@@ -60,9 +60,6 @@ submitBtn.onclick = function (event) {
     emailError.classList.add('show');
     emailError.classList.remove('hide');
   }
-
-  let data = new FormData(form);
-  console.log(data.get('email'));
 };
 
 function validateEmail(emailAddy) {
